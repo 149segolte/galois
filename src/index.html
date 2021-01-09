@@ -3,12 +3,225 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Hello World!</title>
+	<title>Galois</title>
 </head>
 
-<body>
-	<h1>💖 Hello World!</h1>
-	<p>Welcome to your Electron application.</p>
+<body class="vh-100">
+	<div class="container-fluid d-flex h-100 flex-column p-0">
+		<div class="row bg-light flex-grow-1 d-flex justify-content-start m-0 content">
+			<div class="col-2 bg-periwinkle">
+				<div class="row h-100">
+					<div class="list-group m-0 p-0 menu"
+						 id="list-tab"
+						 role="tablist">
+						<div class="list-group-item border-0">
+							<span class="title fs-4 fw-bold text-primary">Galois</span>
+						</div>
+						<a class="list-group-item list-group-item-action active border-0"
+						   id="home-list"
+						   data-bs-toggle="list"
+						   href="#home"
+						   role="tab"
+						   aria-controls="home">
+							<div><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 fill="currentColor"
+									 class="bi bi-house"
+									 viewBox="0 0 16 16">
+									<path fill-rule="evenodd"
+										  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+									<path fill-rule="evenodd"
+										  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+								</svg></div><span class="svg-pad">Home</span>
+						</a>
+						<a class="list-group-item list-group-item-action border-0"
+						   id="archive-list"
+						   data-bs-toggle="list"
+						   href="#archive"
+						   role="tab"
+						   aria-controls="archive">
+							<div><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 fill="currentColor"
+									 class="bi bi-file-zip"
+									 viewBox="0 0 16 16">
+									<path
+										  d="M6.5 7.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v.938l.4 1.599a1 1 0 0 1-.416 1.074l-.93.62a1 1 0 0 1-1.109 0l-.93-.62a1 1 0 0 1-.415-1.074l.4-1.599V7.5zm2 0h-1v.938a1 1 0 0 1-.03.243l-.4 1.598.93.62.93-.62-.4-1.598a1 1 0 0 1-.03-.243V7.5z" />
+									<path
+										  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm5.5-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9v1H8v1h1v1H8v1h1v1H7.5V5h-1V4h1V3h-1V2h1V1z" />
+								</svg></div><span class="svg-pad">Archive</span>
+						</a>
+						<a class="list-group-item list-group-item-action border-0"
+						   id="encrypt-list"
+						   data-bs-toggle="list"
+						   href="#encrypt"
+						   role="tab"
+						   aria-controls="encrypt">
+							<div><svg xmlns="http://www.w3.org/2000/svg"
+									 width="18"
+									 height="18"
+									 fill="currentColor"
+									 viewBox="0 0 484.457 484.457">
+									<path
+										  d="M447.112,37.345C423.031,13.263,391.012,0,356.957,0c-34.057,0-66.075,13.263-90.156,37.345L166.215,137.931l21.213,21.213L288.013,58.558C306.428,40.143,330.913,30,356.957,30c26.043,0,50.527,10.143,68.942,28.558s28.558,42.899,28.558,68.942c0,26.044-10.143,50.528-28.558,68.943L325.313,297.029l21.213,21.213l100.586-100.586c24.082-24.081,37.345-56.1,37.345-90.156S471.194,61.426,447.112,37.345z" />
+									<path
+										  d="M196.443,425.899c-18.415,18.415-42.899,28.558-68.942,28.558s-50.527-10.143-68.943-28.558C40.142,407.484,30,383,30,356.957c0-26.044,10.142-50.528,28.557-68.943l100.586-100.586l-21.213-21.213L37.344,266.801C13.263,290.882,0,322.9,0,356.957c0,34.056,13.263,66.074,37.344,90.155c24.082,24.082,56.1,37.345,90.156,37.345s66.075-13.263,90.156-37.345l100.586-100.586l-21.213-21.213L196.443,425.899z" />
+									<path
+										  d="M321.688,141.552l21.213,21.213L162.768,342.898l-21.213-21.213L321.688,141.552z" />
+								</svg></div><span class="svg-pad">Encrypt</span>
+						</a>
+						<a class="list-group-item list-group-item-action border-0"
+						   id="decrypt-list"
+						   data-bs-toggle="list"
+						   href="#decrypt"
+						   role="tab"
+						   aria-controls="decrypt">
+							<div><svg xmlns="http://www.w3.org/2000/svg"
+									 width="18"
+									 height="18"
+									 viewBox="0 0 97.794 97.794"
+									 fill="currentColor">
+									<g>
+										<path
+											  d="M53.641,61.4c-0.545-0.195-1.156-0.059-1.564,0.353L32.801,81.027c-2.138,2.139-4.985,3.314-8.017,3.314c-3.032,0-5.878-1.177-8.015-3.314c-4.42-4.422-4.42-11.614,0-16.034l19.273-19.271c0.41-0.41,0.547-1.02,0.352-1.565c-0.195-0.546-0.688-0.931-1.264-0.987l-13.457-1.337c-0.451-0.052-0.891,0.113-1.209,0.432L7.251,55.477C2.575,60.152,0,66.379,0,73.01s2.575,12.857,7.251,17.533c4.675,4.676,10.902,7.251,17.533,7.251c6.631,0,12.858-2.575,17.534-7.251l13.213-13.212c0.318-0.317,0.477-0.763,0.432-1.209l-1.335-13.458C54.57,62.088,54.188,61.596,53.641,61.4z" />
+										<path
+											  d="M90.544,7.251C85.868,2.575,79.641,0,73.01,0S60.152,2.575,55.477,7.251L42.263,20.464c-0.318,0.317-0.477,0.762-0.432,1.209l1.337,13.458c0.057,0.577,0.442,1.069,0.988,1.264c0.546,0.196,1.155,0.059,1.565-0.352l19.272-19.275c2.138-2.138,4.985-3.315,8.017-3.315c3.032,0,5.879,1.178,8.018,3.315c4.42,4.42,4.42,11.612,0,16.033L61.754,52.074c-0.41,0.41-0.547,1.021-0.352,1.566s0.688,0.93,1.264,0.986l13.456,1.337c0.05,0.007,0.099,0.009,0.147,0.009c0.396,0,0.778-0.156,1.062-0.439l13.213-13.214C100.211,32.651,100.211,16.919,90.544,7.251z" />
+										<path
+											  d="M8.841,37.696c0.009,0,0.018,0,0.026,0l16.194-0.282c0.741-0.013,1.362-0.565,1.46-1.301c0.098-0.735-0.355-1.432-1.067-1.64L9.905,29.939c-0.42-0.123-0.873-0.056-1.238,0.184c-0.366,0.238-0.61,0.624-0.668,1.058l-0.645,4.816c-0.058,0.434,0.076,0.87,0.367,1.196C8.005,37.513,8.413,37.696,8.841,37.696z" />
+										<path
+											  d="M34.476,25.454c0.188,0.646,0.781,1.08,1.439,1.08c0.066,0,0.133-0.004,0.2-0.014c0.735-0.098,1.288-0.719,1.301-1.46l0.281-16.194c0.007-0.438-0.176-0.856-0.503-1.146c-0.327-0.29-0.763-0.425-1.197-0.365l-4.816,0.648c-0.433,0.058-0.819,0.303-1.057,0.669c-0.238,0.366-0.305,0.818-0.183,1.237L34.476,25.454z" />
+										<path
+											  d="M88.928,60.098l-16.193,0.281c-0.742,0.014-1.362,0.564-1.461,1.301c-0.099,0.735,0.354,1.432,1.066,1.641l15.549,4.535c0.139,0.039,0.279,0.06,0.42,0.06c0.289,0,0.572-0.083,0.818-0.243c0.366-0.238,0.609-0.624,0.668-1.059l0.646-4.815c0.058-0.435-0.076-0.87-0.367-1.196C89.783,60.273,89.346,60.079,88.928,60.098z" />
+										<path
+											  d="M63.318,72.342c-0.207-0.712-0.898-1.174-1.639-1.066c-0.734,0.1-1.287,0.72-1.301,1.461l-0.281,16.191c-0.007,0.438,0.176,0.856,0.502,1.146c0.276,0.246,0.633,0.38,0.998,0.38c0.066,0,0.133-0.005,0.2-0.015l4.815-0.646c0.434-0.058,0.82-0.302,1.059-0.668c0.238-0.367,0.305-0.819,0.184-1.237L63.318,72.342z" />
+									</g>
+								</svg></div><span class="svg-pad">Decrypt</span>
+						</a>
+						<a class="list-group-item list-group-item-action border-0"
+						   id="compress-list"
+						   data-bs-toggle="list"
+						   href="#compress"
+						   role="tab"
+						   aria-controls="compress">
+							<div><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 viewBox="0 0 172 172"
+									 fill="currentColor">
+									<path
+										  d="M143.19336,21.43001c-1.86189,0.05548 -3.62905,0.83363 -4.92708,2.1696l-28.65267,28.65267l-9.1683,-9.18229c-2.6875,-2.6875 -7.27865,-0.78889 -7.27865,3.00944v28.4847c0,2.35783 1.90454,4.2692 4.25521,4.2692h28.4847c3.79833,0 5.69694,-4.59115 3.00944,-7.27865l-9.1683,-9.16829l28.65267,-28.65267c2.11962,-2.06035 2.75694,-5.21064 1.60486,-7.93287c-1.15207,-2.72224 -3.85719,-4.45797 -6.81189,-4.37084zM46.07943,93.16667c-3.79833,0 -5.69694,4.59115 -3.00944,7.27865l9.18229,9.1683l-28.65267,28.65267c-1.8722,1.79752 -2.62637,4.46674 -1.97164,6.97823c0.65473,2.51149 2.61604,4.4728 5.12753,5.12753c2.51149,0.65473 5.18071,-0.09944 6.97823,-1.97165l28.65267,-28.65267l9.16829,9.1683c2.6875,2.6875 7.27865,0.78889 7.27865,-3.00944v-28.4847c0,-2.35067 -1.91137,-4.25521 -4.2692,-4.25521z">
+									</path>
+								</svg></div><span class="svg-pad">Compress</span>
+						</a>
+						<a class="list-group-item list-group-item-action mt-auto border-0"
+						   id="settings-list"
+						   data-bs-toggle="list"
+						   href="#settings"
+						   role="tab"
+						   aria-controls="settings">
+							<div><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 fill="currentColor"
+									 class="bi bi-sliders"
+									 viewBox="0 0 16 16">
+									<path fill-rule="evenodd"
+										  d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+								</svg></div><span class="svg-pad">Settings</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 frame bg-dark p-0">
+				<nav class="navbar navbar-expand navbar-dark bg-dark">
+					<div class="container-fluid px-1">
+						<a class="navbar-brand"
+						   href="#"></a>
+						<div class="navbar-nav">
+							<a class="nav-link window-controls"
+							   id="min-button"
+							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 fill="currentColor"
+									 class="bi bi-dash-square"
+									 viewBox="0 0 16 16">
+									<path
+										  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+									<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+								</svg></a>
+							<a class="nav-link window-controls"
+							   id="restore-button"
+							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 fill="currentColor"
+									 class="bi bi-fullscreen-exit"
+									 viewBox="0 0 16 16">
+									<path
+										  d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z" />
+								</svg></a>
+							<a class="nav-link window-controls"
+							   id="max-button"
+							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 fill="currentColor"
+									 class="bi bi-fullscreen"
+									 viewBox="0 0 16 16">
+									<path
+										  d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
+								</svg></a>
+							<a class="nav-link window-controls"
+							   id="close-button"
+							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
+									 width="20"
+									 height="20"
+									 fill="currentColor"
+									 class="bi bi-x-square"
+									 viewBox="0 0 16 16">
+									<path
+										  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+									<path
+										  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+								</svg></a>
+						</div>
+					</div>
+				</nav>
+				<div class="container-fluid text-periwinkle">
+					<div class="tab-content"
+						 id="nav-tabContent">
+						<div class="tab-pane fade show active"
+							 id="home"
+							 role="tabpanel"
+							 aria-labelledby="home-list"></div>
+						<div class="tab-pane fade"
+							 id="archive"
+							 role="tabpanel"
+							 aria-labelledby="archive-list"></div>
+						<div class="tab-pane fade"
+							 id="encrypt"
+							 role="tabpanel"
+							 aria-labelledby="encrypt-list"></div>
+						<div class="tab-pane fade"
+							 id="decrypt"
+							 role="tabpanel"
+							 aria-labelledby="decrypt-list"></div>
+						<div class="tab-pane fade"
+							 id="compress"
+							 role="tabpanel"
+							 aria-labelledby="compress-list"></div>
+						<div class="tab-pane fade"
+							 id="settings"
+							 role="tabpanel"
+							 aria-labelledby="settings-list"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

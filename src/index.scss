@@ -1,6 +1,65 @@
+@import "custom";
+
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Helvetica, Arial, sans-serif;
 	margin: auto;
-	max-width: 38rem;
-	padding: 2rem;
+	-webkit-user-select: none;
+}
+
+.navbar {
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+
+.window-controls {
+	-webkit-user-select: none;
+	-webkit-app-region: no-drag;
+	padding-left: 0.7rem !important;
+	padding-right: 0.7rem !important;
+	display: flex;
+}
+
+#restore-button {
+	display: none;
+}
+
+.maximized #navbar {
+	width: 100%;
+	padding: 0;
+}
+
+.maximized #window-title {
+	margin-left: 12px;
+}
+
+.maximized #restore-button {
+	display: flex !important;
+}
+
+.maximized #max-button {
+	display: none;
+}
+
+a:hover,
+a:focus {
+	color: #4e4e8a !important;
+}
+
+.menu {
+	border-radius: 0rem;
+	background-color: #bdcce2;
+}
+
+a.list-group-item {
+	display: flex;
+	background-color: #bdcce2;
+}
+
+.svg-pad {
+	margin: 0 0 0 10px;
+}
+
+.title {
+	padding: 5px 5px 5px 5px;
 }
