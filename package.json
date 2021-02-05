@@ -5,6 +5,7 @@
 	"description": "Advanced Data Storage Interface",
 	"main": ".webpack/main",
 	"scripts": {
+		"postinstall": "npm install better-sqlite3 --no-save --build-from-source --runtime=electron --target=11.2.2 --dist-url=https://electronjs.org/headers --sqlite3=\"/home/one49segolte/git/galois-better/sqlcipher-amalgamation/x86_64-linux-gnu\"",
 		"start": "electron-forge start",
 		"package": "electron-forge package",
 		"make": "electron-forge make",
@@ -24,8 +25,12 @@
 	"homepage": "https://github.com/149segolte/galois#readme",
 	"config": {
 		"forge": {
-			"packagerConfig": {
-				"prune": false
+			"packagerConfig": {},
+			"electronRebuildConfig": {
+				"extraModules": [
+					"better-sqlite3"
+				],
+				"force": true
 			},
 			"makers": [
 				{

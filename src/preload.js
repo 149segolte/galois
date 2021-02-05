@@ -6,6 +6,7 @@ const tar = require('tar')
 const splitFile = require('split-file')
 const crypto = require('crypto')
 const zlib = require('zlib')
+const sqlite3 = require('better-sqlite3')
 
 function getCurrentWindow() {
 	return remote.getCurrentWindow();
