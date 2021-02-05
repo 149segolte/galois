@@ -6,17 +6,48 @@
 	<title>Galois</title>
 </head>
 
-<body class="vh-100">
-	<div class="container-fluid d-flex h-100 flex-column p-0">
-		<div class="row bg-light flex-grow-1 d-flex justify-content-start m-0 content">
+<body class="bg-light">
+	<div class="container-fluid p-0 h-100">
+		<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top p-0">
+			<div class="row container-fluid p-0 m-0">
+				<div class="col-2 bg-light py-2 px-3">
+					<span class="navbar-brand fs-4 fw-bold text-primary">Galois</span>
+				</div>
+				<div class="navbar-nav bg-dark col-10 p-0">
+					<a class="nav-link window-controls ms-auto"
+					   id="min-button"
+					   href="#"><svg xmlns="http://www.w3.org/2000/svg"
+							 width="20"
+							 height="20"
+							 fill="currentColor"
+							 class="bi bi-dash-square"
+							 viewBox="0 0 16 16">
+							<path
+								  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+							<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+						</svg></a>
+					<a class="nav-link window-controls me-1"
+					   id="close-button"
+					   href="#"><svg xmlns="http://www.w3.org/2000/svg"
+							 width="20"
+							 height="20"
+							 fill="currentColor"
+							 class="bi bi-x-square"
+							 viewBox="0 0 16 16">
+							<path
+								  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+							<path
+								  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+						</svg></a>
+				</div>
+			</div>
+		</nav>
+		<div class="bg-dark mta-51 d-flex h-100">
 			<div class="col-2 bg-periwinkle">
-				<div class="row h-100">
+				<div class="row w-100 m-0">
 					<div class="list-group m-0 p-0 menu"
 						 id="list-tab"
 						 role="tablist">
-						<div class="list-group-item border-0">
-							<span class="title fs-4 fw-bold text-primary">Galois</span>
-						</div>
 						<a class="list-group-item list-group-item-action active border-0"
 						   id="home-list"
 						   data-bs-toggle="list"
@@ -134,90 +165,180 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-10 frame bg-dark p-0">
-				<nav class="navbar navbar-expand navbar-dark bg-dark">
-					<div class="container-fluid px-1">
-						<a class="navbar-brand"
-						   href="#"></a>
-						<div class="navbar-nav">
-							<a class="nav-link window-controls"
-							   id="min-button"
-							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
-									 width="20"
-									 height="20"
-									 fill="currentColor"
-									 class="bi bi-dash-square"
-									 viewBox="0 0 16 16">
-									<path
-										  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-									<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-								</svg></a>
-							<a class="nav-link window-controls"
-							   id="restore-button"
-							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
-									 width="20"
-									 height="20"
-									 fill="currentColor"
-									 class="bi bi-fullscreen-exit"
-									 viewBox="0 0 16 16">
-									<path
-										  d="M5.5 0a.5.5 0 0 1 .5.5v4A1.5 1.5 0 0 1 4.5 6h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 10 4.5v-4a.5.5 0 0 1 .5-.5zM0 10.5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 6 11.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zm10 1a1.5 1.5 0 0 1 1.5-1.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4z" />
-								</svg></a>
-							<a class="nav-link window-controls"
-							   id="max-button"
-							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
-									 width="20"
-									 height="20"
-									 fill="currentColor"
-									 class="bi bi-fullscreen"
-									 viewBox="0 0 16 16">
-									<path
-										  d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
-								</svg></a>
-							<a class="nav-link window-controls"
-							   id="close-button"
-							   href="#"><svg xmlns="http://www.w3.org/2000/svg"
-									 width="20"
-									 height="20"
-									 fill="currentColor"
-									 class="bi bi-x-square"
-									 viewBox="0 0 16 16">
-									<path
-										  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-									<path
-										  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-								</svg></a>
+			<div class="col-10 text-periwinkle ms-3 displayContent">
+				<div aria-live="polite"
+					 aria-atomic="true"
+					 class="position-relative">
+					<div class="toast-container position-absolute top-0 end-0 p-3">
+						<div class="toast toast-warn d-flex align-items-center text-white bg-primary border-0"
+							 role="alert"
+							 aria-live="assertive"
+							 aria-atomic="true"
+							 id="warning">
+							<div class="toast-body"
+								 id="toast-warn-body">
+							</div>
+							<button type="button"
+									class="btn-close btn-close-white ms-auto me-2"
+									data-bs-dismiss="toast"
+									aria-label="Close"></button>
+						</div>
+						<div class="toast toast-mess d-flex align-items-center text-white bg-primary border-0"
+							 role="alert"
+							 aria-live="assertive"
+							 aria-atomic="true"
+							 id="warning">
+							<div class="toast-body"
+								 id="toast-mess-body">
+							</div>
+							<button type="button"
+									class="btn-close btn-close-white ms-auto me-2"
+									data-bs-dismiss="toast"
+									aria-label="Close"></button>
 						</div>
 					</div>
-				</nav>
-				<div class="container-fluid text-periwinkle">
-					<div class="tab-content"
-						 id="nav-tabContent">
-						<div class="tab-pane fade show active"
-							 id="home"
-							 role="tabpanel"
-							 aria-labelledby="home-list"></div>
-						<div class="tab-pane fade"
-							 id="archive"
-							 role="tabpanel"
-							 aria-labelledby="archive-list"></div>
-						<div class="tab-pane fade"
-							 id="encrypt"
-							 role="tabpanel"
-							 aria-labelledby="encrypt-list"></div>
-						<div class="tab-pane fade"
-							 id="decrypt"
-							 role="tabpanel"
-							 aria-labelledby="decrypt-list"></div>
-						<div class="tab-pane fade"
-							 id="compress"
-							 role="tabpanel"
-							 aria-labelledby="compress-list"></div>
-						<div class="tab-pane fade"
-							 id="settings"
-							 role="tabpanel"
-							 aria-labelledby="settings-list"></div>
+				</div>
+				<div class="tab-content py-2"
+					 id="nav-tabContent">
+					<div class="tab-pane fade show active mb-3"
+						 id="home"
+						 role="tabpanel"
+						 aria-labelledby="home-list">
+						<div class="home">
+							<div class="mb-3">
+								<div class="mb-3">
+									<svg xmlns="http://www.w3.org/2000/svg"
+										 width="20"
+										 height="20"
+										 fill="#FFF"
+										 class="bi bi-caret-right mb-1"
+										 viewBox="0 0 16 16">
+										<path
+											  d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+									</svg>
+									<span class="fs-5 text-white svg-pad"> Selection</span>
+								</div>
+								<div class="mx-5"
+									 id="selectInfo">
+									<div id="selectMenu">
+										<button type="button"
+												class="btn btn-primary btn-sm"
+												id="fileSelect">Files</button>
+										<span class="mx-2">or</span>
+										<button type="button"
+												class="btn btn-primary btn-sm"
+												id="folderSelect">Folder</button>
+									</div>
+									<div class="row"
+										 id="details">
+										<button type="button"
+												class="btn btn-primary my-1"
+												id="clearTable">Clear Table</button>
+										<table id="detailsTable"
+											   class="table table-dark table-striped text-periwinkle"></table>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3">
+								<div class="mb-3">
+									<svg xmlns="http://www.w3.org/2000/svg"
+										 width="20"
+										 height="20"
+										 fill="#FFF"
+										 class="bi bi-caret-right"
+										 viewBox="0 0 16 16">
+										<path
+											  d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+									</svg>
+									<span class="fs-5 text-white svg-pad"> Parameters</span>
+								</div>
+								<div class="mx-5">
+									<div class="mb-3 d-flex">
+										<span> Output :</span>
+										<button type="button"
+												class="btn btn-primary btn-sm mx-2"
+												id="outputBtn">Choose Path</button>
+										<span id="outputPath"
+											  class="mx-2"></span>
+										<button type="button"
+												class="btn btn-primary btn-sm mx-2"
+												id="changeBtn">Change Path</button>
+									</div>
+									<div class="mb-3 d-flex">
+										<span class="pt-1 me-2">Piece Size : </span>
+										<form action="javascript:void(0)">
+											<div class="input-group input-group-sm">
+												<input type="number"
+													   class="form-control"
+													   placeholder="Size"
+													   id="pieceSize">
+												<span class="input-group-text">GB</span>
+											</div>
+										</form>
+									</div>
+									<div class="mb-3 d-flex">
+										<span class="pt-1 me-2">Output Name : </span>
+										<form action="javascript:void(0)">
+											<div class="input-group input-group-sm">
+												<input type="text"
+													   class="form-control"
+													   placeholder="Name"
+													   id="outputName">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3">
+								<div class="mb-3">
+									<svg xmlns="http://www.w3.org/2000/svg"
+										 width="20"
+										 height="20"
+										 fill="#FFF"
+										 class="bi bi-caret-right mb-1"
+										 viewBox="0 0 16 16">
+										<path
+											  d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+									</svg>
+									<span class="fs-5 text-white svg-pad"> Process</span>
+								</div>
+								<div class="mx-5">
+									<button class="btn btn-primary btn-sm"
+											type="button"
+											id="start">Start</button>
+									<button class="btn btn-primary btn-sm"
+											type="button"
+											id="loading"
+											disabled>
+										<span class="spinner-border spinner-border-sm m-1"
+											  role="status"
+											  aria-hidden="true"></span>
+										<span class="ps-1 pt-1">Loading...</span>
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
+					<div class="tab-pane fade mb-3"
+						 id="archive"
+						 role="tabpanel"
+						 aria-labelledby="archive-list"></div>
+					<div class="tab-pane fade mb-3"
+						 id="encrypt"
+						 role="tabpanel"
+						 aria-labelledby="encrypt-list"></div>
+					<div class="tab-pane fade mb-3"
+						 id="decrypt"
+						 role="tabpanel"
+						 aria-labelledby="decrypt-list"></div>
+					<div class="tab-pane fade mb-3"
+						 id="compress"
+						 role="tabpanel"
+						 aria-labelledby="compress-list"></div>
+					<div class="tab-pane fade mb-3"
+						 id="settings"
+						 role="tabpanel"
+						 aria-labelledby="settings-list"></div>
 				</div>
 			</div>
 		</div>
