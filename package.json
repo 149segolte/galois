@@ -24,9 +24,7 @@
 	"homepage": "https://github.com/149segolte/galois#readme",
 	"config": {
 		"forge": {
-			"packagerConfig": {
-				"prune": false
-			},
+			"packagerConfig": {},
 			"makers": [
 				{
 					"name": "@electron-forge/maker-squirrel",
@@ -96,6 +94,7 @@
 	"dependencies": {
 		"electron-squirrel-startup": "^1.0.0",
 		"split-file": "^2.2.1",
+		"sqlite3": "^5.0.1",
 		"tar": "^6.1.0"
 	}
 }
