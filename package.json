@@ -92,7 +92,7 @@
 		"cz-conventional-changelog": "^3.3.0",
 		"electron": "^11.2.2",
 		"node-loader": "^1.0.2",
-		"postcss": "^8.2.4",
+		"postcss": "^8.2.10",
 		"postcss-loader": "^4.1.0",
 		"sass": "^1.32.6",
 		"sass-loader": "^10.1.1",
