@@ -101,6 +101,6 @@
 	"dependencies": {
 		"electron-squirrel-startup": "^1.0.0",
 		"split-file": "^2.2.1",
-		"tar": "^6.1.0"
+		"tar": "^6.1.9"
 	}
 }
