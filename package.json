@@ -90,7 +90,7 @@
 		"bootstrap": "^5.0.0-beta1",
 		"css-loader": "^5.0.1",
 		"cz-conventional-changelog": "^3.3.0",
-		"electron": "^11.2.2",
+		"electron": "^11.5.0",
 		"node-loader": "^1.0.2",
 		"postcss": "^8.2.4",
 		"postcss-loader": "^4.1.0",
